@@ -15,6 +15,48 @@
       rel="stylesheet"
     />
     <meta charset="UTF-8" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Nina Carducci Dev",
+        "image": "https://yourwebsite.com/assets/images/nina.webp",
+        "description": "Devenir photographe était pour moi une évidence...",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 avenue Alsace-Lorraine",
+          "addressLocality": "Paris",
+          "addressRegion": "Bordeaux",
+          "postalCode": "33200",
+          "addressCountry": "France"
+        },
+        "url": "https://Nina-Carducci-Dev.com",
+        "telephone": "+33 (0)5 56 67 78 89",
+        "priceRange": "€€",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday"
+            ],
+            "opens": "10:00 AM",
+            "closes": "7:00 PM"
+          },
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "10:00",
+            "closes": "14:00"
+          }
+        ],
+        "sameAs": ["https://www.instagram.com/ninacarducci.photo/?hl=fr"]
+      }
+    </script>
+
     <script src="./assets/bootstrap/bootstrap.bundle.js"></script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -23,6 +65,7 @@
     ></script>
     <script src="./assets/maugallery.js"></script>
     <script src="./assets/scripts.js"></script>
+
     <title>Nina Carducci Dev</title>
   </head>
   <body>
@@ -83,6 +126,8 @@
               src="./assets/images/slider/ryoji-iwata-wUZjnOv7t0g-unsplash.webp"
               class="d-block w-100"
               alt="ryoji-iwata"
+              width=""
+              height=""
             />
           </div>
           <div class="carousel-item">
@@ -90,6 +135,8 @@
               src="./assets/images/slider/nicholas-green-nPz8akkUmDI-unsplash.webp"
               class="d-block w-100"
               alt="nicholas-green"
+              width=""
+              height=""
             />
           </div>
           <div class="carousel-item">
@@ -97,6 +144,8 @@
               src="./assets/images/slider/edward-cisneros-3_h6-1NPDGw-unsplash.webp"
               class="d-block w-100"
               alt="edward-cisneros"
+              width=""
+              height=""
             />
           </div>
         </div>
@@ -122,7 +171,12 @@
     </div>
     <div id="about">
       <div class="picture left">
-        <img src="./assets/images/nina.webp" alt="nina" />
+        <img
+          src="./assets/images/nina.webp"
+          alt="nina"
+          width="408"
+          height="408"
+        />
       </div>
       <div id="about-me">
         <h2 class="about-me__title">A propos de moi</h2>
@@ -315,7 +369,12 @@
           </form>
         </div>
         <div class="picture right">
-          <img src="./assets/images/camera.webp" alt="camera" />
+          <img
+            src="./assets/images/camera.webp"
+            alt="camera"
+            width="399"
+            height="399"
+          />
         </div>
       </div>
     </div>
