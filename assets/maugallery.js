@@ -218,8 +218,11 @@
       if ($(this).hasClass("active-tag")) {
         return;
       }
+      // Remove the active styling from the currently selected tag
       $(".active-tag").removeClass("active active-tag");
-      $(this).addClass("active-tag");
+
+      // Add the active styling to the newly selected tag
+      $(this).addClass("active active-tag");
 
       var tag = $(this).data("images-toggle");
 
